@@ -1,0 +1,6 @@
+加密密文：afZ_r9VYfScOeO_UL^RWUc
+格式：flag{ }
+
+ascii 简单偏移
+
+对照后发现：第一个偏移5 第二个偏移6 第三个偏移7
