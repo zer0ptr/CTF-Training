@@ -1,8 +1,8 @@
 from pwn import *
 from LibcSearcher import *
 
-# sh = process('./ret2libc')
-sh = remote("node5.buuoj.cn", 27359)
+sh = process('./ret2libc')
+# sh = remote("node5.buuoj.cn", 27359)
 elf = ELF('./ret2libc')
 
 puts_plt = elf.plt['puts']
