@@ -1,7 +1,14 @@
 #!/usr/bin/env python
 from pwn import *
 from LibcSearcher import LibcSearcher
-sh = process('./ret2libc3')
+
+local = 1
+pc = './ret2libc3'
+aslr = True
+context.log_level = 'debug'  
+context.arch = 'i386' 
+
+sh = process('./ret2libc3', aslr=aslr)
 
 ret2libc3 = ELF('./ret2libc3')
 
